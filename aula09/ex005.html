@@ -21,10 +21,17 @@
     <div id="msg">clica ai</div>
     <script>
         var corpo = window.document.body
-        var p1 = window.document.getElementById('p')[1]
-        var d = window.document.getElementById('msg')
+        var p1 = window.document.getElementsByTagName('p')[1]
+
+        /*
+        var d = document.getElementById('msg') // Window oculto
         d.style.background = 'green'
         d.innerText = 'Estou no aguardo....'
+        //window.document.getElementById('msg').innerText = 'Fala menor!!'  //comando em uma linha
+        */
+        var d = window.document.querySelector('div#msg')
+        d.style.background = 'blue' 
+
     </script>
 </body>
 </html>
