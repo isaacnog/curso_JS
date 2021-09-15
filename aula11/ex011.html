@@ -8,16 +8,25 @@
 </head>
 <body>
     <h1>Sistema de nacionalidade</h1>
+
+    Seu nome : <input type="text" name="nome" id="nome"><br>
     Sua nacionalidade: <input type="text" name="nacionalidade" id="nacionalidade">
     <input type="button" value="Verificar" onclick="verNacionalidade()">
     <div id="res"></div>
 
     <script>
         function verNacionalidade() {
-            var naçao = document.querySelector('div#nacionalidade')
+            var nome = document.querySelector('input#nome').value
+            var naçao = document.querySelector('input#nacionalidade').value
             var res = document.querySelector('div#res')
 
-            res.innerHTML = `Sua nacionalidade é ${naçao}`
+            res.innerHTML = `Bem-vindo ao Brasil, ${nome}`
+
+            if(naçao == 'brasileiro' || naçao == 'brasileira') {
+                res.innerHTML += `<p>Você é brasileiro(a)</p>` 
+            }else{
+                res.innerHTML += `<p>Você é estrangeiro</p>`
+            }
         }
     </script>
 </body>
