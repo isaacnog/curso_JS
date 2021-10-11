@@ -1,4 +1,4 @@
-body {
+body{
     background: gray;
     font: normal 15pt Arial;
 }
@@ -14,11 +14,10 @@ section {
     padding: 15px;
     width: 500px;
     margin: auto;
-    box-shadow: 3px 3px 10px #252222;
+    box-shadow: 2px 2px 8px rgb(41, 38, 38);
 }
 
 div {
-    text-align: center;
     padding: 8px;
 }
 
